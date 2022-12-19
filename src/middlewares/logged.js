@@ -1,7 +1,7 @@
 
 
 const isLogged = (req, res, nex)=>{
-    let isLogged = true
+    let isLogged = false
     if(isLogged == true){
         nex()
  }

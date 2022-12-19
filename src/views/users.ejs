@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Usuarios</h1>
+    <h1>Usuario</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+       <% users.forEach((user) => {%>
+            <tr>
+                <td> <%= user.id %> </td>
+                <td> <%= user.name %> </td>
+                <td> <%= user.age %> </td>
+            </tr>
+       <% }) %>
+    </table>
 </body>
 </html>
